@@ -11,7 +11,7 @@ namespace AlgorithmsAndSearches
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics");
+                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics \n 7.PrimeRange");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -42,6 +42,10 @@ namespace AlgorithmsAndSearches
                         LinkedListGeneric<string> linkedListGeneric = new LinkedListGeneric<string>();
                         linkedListGeneric.Add("Prerana");
                         linkedListGeneric.Display();
+                        break;
+                    case 7:
+                        PrimeNumber range = new PrimeNumber();
+                        range.PrimeRange(0, 100);
                         break;
                 }
             }
