@@ -11,7 +11,7 @@ namespace AlgorithmsAndSearches
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics \n 7.PrimeRange");
+                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics \n 7.PrimeRange \n 8.PalindromeAndAnagram");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -46,6 +46,12 @@ namespace AlgorithmsAndSearches
                     case 7:
                         PrimeNumber range = new PrimeNumber();
                         range.PrimeRange(0, 100);
+                        break;
+                    case 8:
+                        PalindromeAnagram list = new PalindromeAnagram();
+                        list.PrimeNumber();
+                        list.Palindrome();
+                        list.AnagramCheck();
                         break;
                 }
             }
