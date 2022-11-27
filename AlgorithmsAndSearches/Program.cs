@@ -10,7 +10,7 @@ namespace AlgorithmsAndSearches
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics \n 7.PrimeRange \n 8.PalindromeAndAnagram \n 9.UnOrderList \n 10.BalanceParenthesis");
+                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics \n 7.PrimeRange \n 8.PalindromeAndAnagram \n 9.UnOrderList \n 10.BalanceParenthesis \n 11.OrderList");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -59,6 +59,10 @@ namespace AlgorithmsAndSearches
                     case 10:
                         BalanceParenthisis balanceParenthisis = new BalanceParenthisis();
                         balanceParenthisis.Balanced(@"D:\217.NetBatch\Algorithm_Programs\AlgorithmsAndSearches\Number.txt");
+                        break;
+                    case 11:
+                        OrderList order = new OrderList();
+                        order.ReadTextFileSortList(@"D:\217.NetBatch\Algorithm_Programs\AlgorithmsAndSearches\Order.txt");
                         break;
 
                 }
