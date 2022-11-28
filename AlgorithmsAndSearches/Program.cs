@@ -10,7 +10,7 @@ namespace AlgorithmsAndSearches
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics \n 7.PrimeRange \n 8.PalindromeAndAnagram \n 9.UnOrderList \n 10.BalanceParenthesis \n 11.OrderList");
+                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics \n 7.PrimeRange \n 8.PalindromeAndAnagram \n 9.UnOrderList \n 10.BalanceParenthesis \n 11.OrderList \n 12.BankCashCounter");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -64,6 +64,11 @@ namespace AlgorithmsAndSearches
                         OrderList order = new OrderList();
                         order.ReadTextFileSortList(@"D:\217.NetBatch\Algorithm_Programs\AlgorithmsAndSearches\Order.txt");
                         break;
+                    case 12:
+                        AtmBalance atmBalance = new AtmBalance();
+                        atmBalance.ATMSYSTEM();
+                        break;
+
 
                 }
             }
