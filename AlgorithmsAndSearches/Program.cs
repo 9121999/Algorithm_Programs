@@ -1,4 +1,5 @@
-﻿using static AlgorithmsAndSearches.UseAnagram;
+﻿using System;
+using static AlgorithmsAndSearches.UseAnagram;
 using static AlgorithmsAndSearches.UserInput;
 
 namespace AlgorithmsAndSearches
@@ -10,7 +11,7 @@ namespace AlgorithmsAndSearches
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics \n 7.PrimeRange \n 8.PalindromeAndAnagram \n 9.UnOrderList \n 10.BalanceParenthesis \n 11.OrderList \n 12.BankCashCounter");
+                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics \n 7.PrimeRange \n 8.PalindromeAndAnagram \n 9.UnOrderList \n 10.BalanceParenthesis \n 11.OrderList \n 12.BankCashCounter \n 13.Merge Array ");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -68,7 +69,17 @@ namespace AlgorithmsAndSearches
                         AtmBalance atmBalance = new AtmBalance();
                         atmBalance.ATMSYSTEM();
                         break;
-
+                    case 13:
+                        int[] array = { 2, 5, 6, 8 ,7,9 ,9};
+                        int[] array2 = { 4, 8, 2, 9, 4 ,6,0,6};
+                        MergeSort mergeSort = new MergeSort();
+                        Console.WriteLine("Array Before Sorting: ");
+                        mergeSort.Display(array);
+                        mergeSort.Merge_Sort( array, 0,  array.Length - 1);
+                        Console.WriteLine("Array after Sorting: ");
+                        mergeSort.Display(array);
+                        break;
+                    
 
                 }
             }
