@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataStructureAlgorithm.DataStructurePrograms;
+using System;
 using static AlgorithmsAndSearches.UseAnagram;
 using static AlgorithmsAndSearches.UserInput;
 
@@ -11,7 +12,7 @@ namespace AlgorithmsAndSearches
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics \n 7.PrimeRange \n 8.PalindromeAndAnagram \n 9.UnOrderList \n 10.BalanceParenthesis \n 11.OrderList \n 12.BankCashCounter \n 13.Merge Array ");
+                Console.WriteLine("select option\n 1.Binary Search\n 2.InsertionSort \n 3.BubbleSort \n 4.Anagram \n 5.UserInput \n 6.Generics \n 7.PrimeRange \n 8.PalindromeAndAnagram \n 9.UnOrderList \n 10.BalanceParenthesis \n 11.OrderList \n 12.BankCashCounter \n 13.Merge Array \n 14.PalindromeCheker");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -78,6 +79,10 @@ namespace AlgorithmsAndSearches
                         mergeSort.Merge_Sort( array, 0,  array.Length - 1);
                         Console.WriteLine("Array after Sorting: ");
                         mergeSort.Display(array);
+                        break;
+                    case 14:
+                        PalindromeChecker palindromeChecker = new PalindromeChecker();
+                        palindromeChecker.ReadAllTextFile(@"D:\217.NetBatch\Algorithm_Programs\AlgorithmsAndSearches\PalindromeString.txt");
                         break;
                     
 
